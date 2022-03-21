@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { NgxCumulioModule } from 'ngx-cumulio';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
+import { NgxCumulioDashboardModule } from '@cumul.io/ngx-cumulio-dashboard';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxCumulioModule.forRoot()
+    NgxCumulioDashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
